@@ -3,3 +3,5 @@ export const semisterOption = [
     {value:"02", label:"Summer"},
     {value:"03", label:"Fall"},
   ]
+
+  

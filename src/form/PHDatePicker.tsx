@@ -1,20 +1,19 @@
-import { Form, Input } from "antd";
+import { DatePicker, Form,} from "antd";
 import { Controller } from "react-hook-form";
 
-type TInputProps = {
-  type: string;
+type TDatePickerprops = {
   name: string;
   label?: string;
 };
 
-const PHInput = ({ name, type, label }: TInputProps) => {
+const PHDatePicker = ({ name,label }: TDatePickerprops) => {
   return (
     <>
       <Controller
         name={name}
         render={({ field }) => (
           <Form.Item label={label}>
-            <Input {...field} type={type} id={name} />
+            <DatePicker {...field} size="large" style={{width:'100%'}}/>
           </Form.Item>
         )}
       />
@@ -22,4 +21,4 @@ const PHInput = ({ name, type, label }: TInputProps) => {
   );
 };
 
-export default PHInput;
+export default PHDatePicker;

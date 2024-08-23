@@ -43,8 +43,6 @@ const CreatAcademicSemister = () => {
     value:String(currentYear + number),
     label: String(currentYear + number)
   }))
-  
-console.log(monthOptions);
 
 
   return (
